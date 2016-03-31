@@ -1,6 +1,6 @@
 <%= form_for @post do |f| %>
   <% if @post.errors.any? %>
-  <h2><%= pluralize(@post.errors.count, "erreur") %>Empêche(nt) d'enregistrer cet article</h2>
+  <h2><%= pluralize(@post.errors.count, "erreur") %> empêche(nt) d'enregistrer cet article</h2>
     <ul>
       <% @post.errors.full_messages.each do |msg| %>
       <li><%= msg %></li>

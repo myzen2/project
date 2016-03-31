@@ -3,9 +3,11 @@ class PostsController < ApplicationController
 
   def index
   end
+
   def new
     @post = Post.new
   end
+
   def create
     @post = Post.new post_params
 
@@ -32,7 +34,7 @@ class PostsController < ApplicationController
 
   def destroy
     @post.destroy
-    redirect_to post_path
+    redirect_to posts_path
   end
 
   private
